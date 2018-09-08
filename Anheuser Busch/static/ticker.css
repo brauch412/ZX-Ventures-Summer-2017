@@ -1,0 +1,180 @@
+html { height: 100%; overflow: hidden }
+
+html, body {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+a{
+
+  color: #FFF;
+  font-size: 0.7em
+  font-family: "Roboto", Helvetica;
+  overflow: hidden
+
+}
+
+.unit
+{
+  text-align: center;
+}
+.left-div
+{
+  display: inline-block;
+  width: 60%;
+  height: 90%;
+  text-align: left;
+  background-color: #ddd;
+  vertical-align: top;
+}
+.right-div
+{
+  display: inline-block;
+  width: 39%;
+  text-align: left;
+  background-color: #ddd;
+  height: 83%;
+
+  vertical-align: top;
+
+}
+
+.graph {
+
+  text-align: center;
+
+}
+
+img {
+    display: block;
+    padding: 2px;
+}
+
+
+
+body {
+
+  background: #C0C0C0;
+}
+
+#container {
+  width: 80%;
+  margin-left:auto;
+  margin-right:13%;
+
+
+}
+
+#graph1 {
+
+  float:left;
+}
+
+#container div {
+  float: left;
+  margin-top:1.5%;
+  height: 2.4%;
+  width: 100%;
+
+
+}
+
+.Stocks {
+  height: 100%;
+  display: block;
+  min-height: 1%;
+  background: #171E2E;
+  color: #FFF;
+  padding: 3%;
+  vertical-align: middle;
+  line-height: 1.5;
+  text-align: left;
+  transform: translateZ(0);
+  font-size: 1.3vw;
+  font-family: "Roboto", Helvetica;
+
+}
+
+.Stocks b { font-weight: 300; }
+.Stocks i { font-style: normal; }
+
+.Stocks .Name,
+.Stocks .Label,
+.Stocks .LastUpdated { font-size: 0.7em; line-height: 1; }
+
+.Stocks span {
+  white-space: nowrap;
+  display: inline-block;
+  padding: 0 2%;
+}
+//.Stocks span { display: block; }
+
+.Stocks .Symbol,
+.Stocks .Stat { color: #88bd0a; }
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  height: 4rem;
+  background-color: #171E2E;
+  padding-left: 100%;
+  margin-left: -80px;
+}
+
+.ticker {
+  display: inline-block;
+  height: 4rem;
+  line-height:4rem;
+  padding-right: 100%;
+  white-space: nowrap;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+}
+.ticker__item {
+  display: inline-block;
+  padding: 4 4rem;
+  font-size: 2rem;
+  overflow: hidden;
+  font-family: "Roboto", Helvetica;
+  font-weight: 300;
+  color: #88bd0a;
+}
+
+h1, h2, p {
+  padding: 0 5%;
+}
+
+
